@@ -1,0 +1,23 @@
+{
+  "name": "datastructures-and-problem-solving-javascript",
+  "version": "1.0.0",
+  "description": "Datastructures and Problem Solving using Javascript",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sansk/datastructures-and-problem-solving-javascript.git"
+  },
+  "author": "Sangy K",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sansk/datastructures-and-problem-solving-javascript/issues"
+  },
+  "homepage": "https://github.com/sansk/datastructures-and-problem-solving-javascript#readme",
+  "dependencies": {
+    "chalk": "^5.2.0"
+  }
+}
