@@ -1,9 +1,26 @@
+import { readFileSync } from 'fs';
+
+let data = '';
+
+try {
+    data = readFileSync('./01-Basic/PlusMinus/sampleInput.txt', 'utf8');
+    main();
+} catch (err) {
+    console.error(err);
+}
+
+function main() {
+    const values = data.split('\r\n');
+    let arr = values.pop().split(' ').map(Number);
+    
+    plusMinus(arr);
+}
+
 /*
  * Complete the 'plusMinus' function below.
  *
  * The function accepts INTEGER_ARRAY arr as parameter.
  */
-
 function plusMinus(arr) {
     // Write your code here
     let pos = 0,
@@ -18,10 +35,4 @@ function plusMinus(arr) {
     console.log((pos.toFixed(6) / (arr.length).toFixed(6)).toFixed(6));
     console.log((neg.toFixed(6) / (arr.length).toFixed(6)).toFixed(6));
     console.log((zero.toFixed(6) / (arr.length).toFixed(6)).toFixed(6));
-}
-
-function main() {
-    //const arr = .split(' ').map(arrTemp => parseInt(arrTemp, 10));
-    
-    plusMinus(arr);
 }
